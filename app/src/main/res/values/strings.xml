@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MMarriage Invite</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="title_activity_root_view">Main Menu</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+
+    <string-array name="events_array">
+        <item>Main</item>
+        <item>Ring Ceremony</item>
+        <item>Paath Sahib</item>
+        <item>Sangeet</item>
+        <item>God Bharai</item>
+        <item>Mehendi</item>
+        <item>Tilak</item>
+        <item>Cocktail</item>
+        <item>Marriage</item>
+    </string-array>
+
+    <string name="title_activity_splash">Marriage Invite</string>
+    <string name="title_activity_rsvp_form">RSVP Form</string>
+
+</resources>

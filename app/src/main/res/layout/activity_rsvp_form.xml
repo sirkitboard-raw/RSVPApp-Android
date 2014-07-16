@@ -1,0 +1,242 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            tools:context="aditya.marriagetest1.rsvp_form"
+            android:background="#111111">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/rules"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please view all event details before submitting"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="15dp"
+            android:textColor="#BBBBBB"/>
+
+        <TextView
+            android:id="@+id/rules2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rules"
+            android:text="Once Submitted, this information cannot be changed"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#BBBBBB"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rules2"
+            android:layout_marginTop="16dp"
+            android:text="Name"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#BBBBBB"/>
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#BBBBBB"/>
+
+        <TextView
+            android:id="@+id/noPeople"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText"
+            android:layout_marginTop="8dp"
+            android:text="Number of People"
+            android:textColor="#BBBBBB"/>
+
+        <EditText
+            android:id="@+id/edit_noPeople"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberSigned"
+            android:textColor="#BBBBBB"
+            android:layout_below="@+id/noPeople"
+            android:layout_alignRight="@+id/rules"
+            android:layout_alignEnd="@+id/rules"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_noPeople"
+            android:layout_marginTop="8dp"
+            android:text="Phone Number"
+            android:textColor="#BBBBBB"/>
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView2"
+            android:ems="10"
+            android:inputType="numberSigned"
+            android:textColor="#BBBBBB"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText2"
+            android:layout_marginTop="8dp"
+            android:text="Email Address"
+            android:textColor="#BBBBBB"/>
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView3"
+            android:textColor="#BBBBBB"/>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText3"
+            android:layout_marginTop="8dp"
+            android:text="Travel Information"
+            android:textSize="18dp"
+            android:textColor="#BBBBBB"/>
+
+        <TextView
+            android:id="@+id/arrival"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView5"
+            android:layout_marginTop="8dp"
+            android:text="Arrival Date"
+            android:textColor="#BBBBBB"/>
+
+        <TextView
+            android:id="@+id/departure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Departure Date"
+            android:layout_alignTop="@+id/arrival"
+            android:layout_alignRight="@+id/textView4"
+            android:layout_alignEnd="@+id/textView4"
+            android:layout_marginRight="18dp"
+            android:textColor="#BBBBBB"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/arrdate"
+            android:layout_below="@id/arrival"
+            android:layout_alignRight="@+id/ringCeremony"
+            android:layout_alignEnd="@+id/ringCeremony"
+            android:textColor="#BBBBBB"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/depdate"
+            android:layout_below="@id/departure"
+            android:layout_alignLeft="@+id/departure"
+            android:layout_alignStart="@+id/departure"
+            android:textColor="#BBBBBB"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/arrdate"
+            android:layout_marginTop="16dp"
+            android:text="Check the events you are attending"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#BBBBBB"/>
+
+        <CheckBox
+            android:id="@+id/marriage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView4"
+            android:text="Marriage"
+            android:textColor="#BBBBBB"/>
+
+        <CheckBox
+            android:id="@+id/ringCeremony"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/marriage"
+            android:text="Ring Ceremony"
+            android:textColor="#BBBBBB"/>
+
+        <CheckBox
+            android:id="@+id/cocktail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ringCeremony"
+            android:text="Cocktail"
+            android:textColor="#BBBBBB"/>
+
+        <CheckBox
+            android:id="@+id/sangeet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cocktail"
+            android:text="Sangeet"
+            android:textColor="#BBBBBB"/>
+
+        <CheckBox
+            android:id="@+id/goddBharai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sangeet"
+            android:text="Godd Bharai"
+            android:textColor="#BBBBBB"/>
+
+        <CheckBox
+            android:id="@+id/mehendi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goddBharai"
+            android:text="Mehendi"
+            android:textColor="#BBBBBB"/>
+
+        <CheckBox
+            android:id="@+id/tilak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mehendi"
+            android:text="Tilak"
+            android:textColor="#BBBBBB"/>
+
+        <CheckBox
+            android:id="@+id/pathSahib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tilak"
+            android:text="Path Sahib"
+            android:textColor="#BBBBBB"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/pathSahib"
+            android:text="Submit"
+            android:textColor="#BBBBBB"
+            android:onClick="submit"/>
+    </RelativeLayout>
+</ScrollView>

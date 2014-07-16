@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+    }
+    compileSdkVersion 19
+    buildToolsVersion '20.0.0'
+    defaultConfig {
+        applicationId 'aditya.marriagetest1'
+        minSdkVersion 14
+        targetSdkVersion 19
+        versionCode 1
+        versionName '1.0'
+    }
+    signingConfigs {
+        release {
+            storeFile file("C:\\Users\\Aditya\\AndroidKeyStore\\adiKey.jks")
+            storePassword "AstrOBOY03"
+            keyAlias "adi"
+            keyPassword "AstrOBOY03"
+        }
+        debug {
+            storeFile file("C:\\Users\\Aditya\\AndroidKeyStore\\adiKey.jks")
+            storePassword "AstrOBOY03"
+            keyAlias "adi"
+            keyPassword "AstrOBOY03"
+        }
+    }
+    buildTypes {
+        release {
+            runProguard false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.debug
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    // You must install or update the Support Repository through the SDK manager to use this dependency.
+    compile 'com.android.support:support-v4:19.+'
+    compile 'com.loopj.android:android-async-http:1.4.5'
+    compile 'com.google.android.gms:play-services:+'
+}
