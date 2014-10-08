@@ -3,12 +3,9 @@ package aditya.marriagetest1;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.CountDownTimer;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
-
-import aditya.marriagetest1.R;
 
 public class Splash extends Activity {
 
@@ -16,7 +13,6 @@ public class Splash extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 	    getActionBar().hide();
-        setContentView(R.layout.activity_splash);
     }
 	@Override
 	public boolean onTouchEvent(MotionEvent motionEvent) {
